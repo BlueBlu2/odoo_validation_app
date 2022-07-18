@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record id="cert_traffic_department" model="ir.actions.act_window">
+            <field name="name">Traffic Department</field>
+            <field name="res_model">cert.traffic.department</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+    <menuitem id="cert_traffic_department_menu" name="Traffic Department" parent="cert_root_menu" action="cert_traffic_department"/>
+
+</odoo>

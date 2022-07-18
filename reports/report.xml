@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <record id="cert_certificate_report" model="ir.actions.report">
+            <field name="name">Certificate Info</field>
+            <field name="model">cert.certificate</field>
+            <field name="binding_model_id" ref="model_cert_certificate"/>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">cert.cert_certificate_template</field>
+            <field name="report_file">cert.cert_certificate_template</field>
+        </record>
+    </data>
+</odoo>

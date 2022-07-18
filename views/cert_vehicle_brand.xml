@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record id="cert_vehicle_brand" model="ir.actions.act_window">
+            <field name="name">Vehicle Brand</field>
+            <field name="res_model">cert.vehicle.brand</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+    <menuitem id="cert_vehicle_brand_menu" name="Vehicle Brand" parent="cert_root_menu" action="cert_vehicle_brand"/>
+
+</odoo>

@@ -1,0 +1,29 @@
+<odoo>
+    <data noupdate="1">
+        <record id="cert_category" model="ir.module.category">
+            <field name="name">CERT</field>
+        </record>
+        <record id="cert_user_group" model="res.groups">
+            <field name="name">Cert USER</field>
+            <field name="category_id" ref="cert_category"/>
+        </record>
+
+        <record id="cert_manager_group" model="res.groups">
+            <field name="name">Cert Manager</field>
+            <field name="category_id" ref="cert_category"/>
+            <field name="implied_ids" eval="[(4,ref('cert_user_group'))]"/>
+        </record>
+        <record id="cert_own_certificates" model="ir.rule">
+            <field name="name">own Certificates</field>
+            <field name="model_id" ref="model_cert_certificate"/>
+            <field name="groups" eval="[(4,ref('cert_user_group'))]"/>
+            <field name="domain_force">[('create_uid','=',user.id)]</field>
+        </record>
+         <record id="cert_all_certificates" model="ir.rule">
+            <field name="name">all Certificates</field>
+            <field name="model_id" ref="model_cert_certificate"/>
+            <field name="groups" eval="[(4,ref('cert_manager_group'))]"/>
+            <field name="domain_force">[]</field>
+        </record>
+    </data>
+</odoo>

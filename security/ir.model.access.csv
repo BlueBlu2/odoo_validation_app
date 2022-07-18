@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+cert_user_access_certificate,CERT USER access Certificate,model_cert_certificate,cert.cert_user_group,1,0,1,0
+cert_user_access_certificate_type,CERT USER access Certificate Type,model_cert_certificate_type,cert.cert_user_group,1,0,0,0
+cert_user_access_traffic_department,CERT USER access Traffic Department,model_cert_traffic_department,cert.cert_user_group,1,0,0,0
+cert_user_access_vehicle_brand,CERT USER access Vehicle Brand,model_cert_vehicle_brand,cert.cert_user_group,1,0,0,0
+cert_user_access_crm_inherit,CERT USER access Crm Inherit,model_res_partner,cert.cert_user_group,1,0,0,0
+cert_user_access_print_history,CERT USER access Print History,model_cert_print_history,cert.cert_user_group,1,0,0,0
+
+
+cert_manager_access_certificate,CERT Manager access Certificate,model_cert_certificate,cert.cert_manager_group,1,1,1,1
+cert_manager_access_certificate_type,CERT Manager access Certificate Type,model_cert_certificate_type,cert.cert_manager_group,1,1,1,1
+cert_manager_access_traffic_department,CERT Manager access Traffic Department,model_cert_traffic_department,cert.cert_manager_group,1,1,1,1
+cert_manager_access_vehicle_brand,CERT Manager access Vehicle Brand,model_cert_vehicle_brand,cert.cert_manager_group,1,1,1,1
+cert_manager_access_crm_inherit,CERT Manager access Crm Inherit,model_res_partner,cert.cert_manager_group,1,1,1,1
+cert_manager_access_print_history,CERT Manager access Print History,model_cert_print_history,cert.cert_manager_group,1,1,1,1
+

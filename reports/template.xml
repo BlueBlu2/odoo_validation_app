@@ -1,0 +1,66 @@
+<odoo>
+    <data>
+        <template id="cert_certificate_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.internal_layout">
+                        <div class="page text-right" dir="rtl">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1 class="text-danger text-center">شهادة صلاحية</h1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6"><p>السيد اللواء مدير ادارة مرور /
+                                        <span class="text-dark font-weight-bold"
+                                              t-esc="o.traffic_department.name"></span></p>
+                                    </div>
+                                    <div class="col-6 text-left">
+                                        <p>تحريرا فى <span class="text-dark font-weight-bold"
+                                              t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"></span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="text-center text-dark font-weight-bold"> تحية طيبة و بعد ,,,,</p>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>اتشرف بأفادة سيادتكم انة تم تعديل / <span t-esc="o.certificate_type.name"></span></p>
+                                    </div>
+                                </div>
+                                <div class="row mb-6">
+                                    <div class="col-6">
+                                        <p>شاسيه رقم/<span class="text-dark font-weight-bold" t-esc="o.chassis_number"></span></p>
+                                        <p>الماركة/ <span class="text-dark font-weight-bold" t-esc="o.Brand.name"></span></p>
+                                        <p>اسم المالك/ <span class="text-dark font-weight-bold" t-esc="o.customer_id.name"></span></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>محرك رقم/ <span class="text-dark font-weight-bold" t-esc="o.motor_number"></span></p>
+                                        <p>موديل/ <span class="text-dark font-weight-bold" t-esc="o.car_model"></span></p>
+                                    </div>
+                                </div>
+                                <div class="row mt-6">
+                                    <div class="col-12">
+                                        <p class="text-dark font-weight-bold">حيث ان المؤسسة معتمدة بالهيئة العامة للتنمية الصناعية و معتمدة بأدارات المرور و لها سجل تجارى صناعى و بطاقة ضريبية بهذه الصفة و قد تم فحص التعديل و تركيب اللحامات و الاصلاحات اللازمة طبقا لأصول الصناعة و دون الاخلال بالتصميم الاصلى و دول المساس بالأجزاء الجوهرية للسيارة و قد تم تجربة السيارة على الطرق المصرية ووجد انها متزنة و هذه شهادة منا بذلك لتقديمها للمرور و المالك مسؤول مسئولية كاملة عن بيانات الشهادة فبرجاء التكرم و التفضل بالموافقة على ترخيص السيارة</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-6">
+                                    <div class="col-12">
+                                        <p class="text-center text-dark font-weight-bold"> و تفضلوا بقبول فائق الاحترام و التقدير ,,,,</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+                <t t-set="var" t-value="1"/>
+            </t>
+
+        </template>
+    </data>
+</odoo>

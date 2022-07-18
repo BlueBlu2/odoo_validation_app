@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record id="cert_test_inherit" model="ir.actions.act_window">
+            <field name="name">test</field>
+            <field name="res_model">cert.test.inherit</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+    <menuitem id="cert_test_inherit_menu" name="Test" parent="cert_root_menu" action="cert_test_inherit"/>
+
+</odoo>
